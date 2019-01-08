@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
+import './style.css';
+import './navStyle.css';
+
 
 import Navigation from './mainNavigation/navbar';
 import passwordGenerator from './pw-gen/passwordGenerator'

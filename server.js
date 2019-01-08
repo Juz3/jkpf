@@ -1,3 +1,14 @@
+/**
+ *  <server.js>
+ *
+ *  Copyright information
+ *
+ *      Copyright (C) 2019 Jussi Koivumäki <firstname.lastname@outlook.com>
+ * 
+ * @author Jussi Koivumäki
+ *
+ */
+
 const express = require('express');
 const path = require('path');
 
@@ -50,7 +61,7 @@ app.use('/api', router);
 
 // Put all API endpoints under '/api'
 app.get('/api/passwords', (req, res) => {
-  const count = 1;
+  const count = 5;
 
   // Generate some passwords
   const passwords = Array.from(Array(count).keys()).map(i =>

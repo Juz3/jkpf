@@ -1,3 +1,8 @@
+ /**
+ *  <passwordGenerator.js>
+ *
+ */
+
 import React from 'react';
 
 class PasswordGen extends React.Component {
@@ -26,11 +31,11 @@ class PasswordGen extends React.Component {
     const { passwords } = this.state;
 
     return (
-      <div>
+      <div className="pw-gen">
           {/* Render the passwords if we have them */}
           {passwords.length ? (
           <div>
-              <h1 className="passwordGenH1">Random generated password</h1>
+              <h2 className="passwordGenH1">Random generated codes. Straight from the server</h2>
               <ul className="passwords">
               {/*
                   Generally it's bad to use "index" as a key.
@@ -47,13 +52,13 @@ class PasswordGen extends React.Component {
               <button
               className="more"
               onClick={this.getPasswords}>
-              Get More
+              Get Some More
               </button>
           </div>
           ) : (
           // Render a helpful message otherwise
           <div>
-              <h1>No passwords :(</h1>
+              <h2>No passwords. Press the button</h2>
               <button
               className="more"
               onClick={this.getPasswords}>
