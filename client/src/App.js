@@ -5,9 +5,9 @@ import './App.css';
 import './style.css';
 import './navStyle.css';
 
-
-import Navigation from './mainNavigation/navbar';
-import passwordGenerator from './pw-gen/passwordGenerator'
+import Navigation from './navigation/navbar';
+import AboutPage from './about/';
+import PasswordGenerator from './pw-gen/passwordGenerator'
 
 class App extends Component {
   render() {
@@ -17,7 +17,8 @@ class App extends Component {
         <div className="App">
           <Navigation />
           <div className="container">
-            <Route exact path="/pw-gen" component={passwordGenerator} />
+            <Route exact path="/pw-gen" component={PasswordGenerator} />
+            <Route exact path="/about" component={AboutPage} />
           </div>
         </div>
       </Router>

@@ -42,6 +42,11 @@ export default class Navigation extends React.Component {
                   Password-gen server test
               </Link>
             </NavItem>
+            <NavItem style={this.state.loginStyle}>
+              <Link className="nav-link" to="/about">
+                  About page
+              </Link>
+            </NavItem>
           </Nav>
         </div>
       </div>

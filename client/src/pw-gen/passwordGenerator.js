@@ -35,7 +35,8 @@ class PasswordGen extends React.Component {
           {/* Render the passwords if we have them */}
           {passwords.length ? (
           <div>
-              <h2 className="passwordGenH1">Random generated codes. Straight from the server</h2>
+              <h2 className="passwordGenH1">Random generated codes. 
+              Straight from the server!</h2>
               <ul className="passwords">
               {/*
                   Generally it's bad to use "index" as a key.
