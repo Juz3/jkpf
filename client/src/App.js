@@ -5,6 +5,7 @@ import './navStyle.css';
 
 import Nav from './navigation/Nav';
 import AboutPage from './about/';
+import Gallery from './gallery/';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Nav />
           <div>
             <Route exact path="/about" component={AboutPage} />
+            <Route exact path="/gallery" component={Gallery} />
           </div>
         </div>
       </Router>
