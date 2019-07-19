@@ -3,11 +3,10 @@
  *
  *  Copyright information
  *
- *      Copyright (C) 2019 Jussi Koivumäki <firstname.lastname@cs.tamk.fi>
+ *      Copyright (C) 2019 Jussi Koivumäki <firstname.lastname@outlook.com>
  *
  * @author Jussi Koivumäki
  * 
- *
  */
 
 import React from 'react';
@@ -16,13 +15,11 @@ import {
   Container,
   Row } from 'reactstrap';
 
-import { Link } from 'react-router-dom';
 
 class AboutPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false,
       headingStyle: {
         color: '#fff'
       },
@@ -31,11 +28,10 @@ class AboutPage extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="onlyBgColor">
+      <div className="App">
         <Container>
           <Row>
-            <Col className="aboutColTop">
+            <Col className="aboutPageMain">
               <h2 style={this.state.headingStyle}>About</h2>
               <p style={this.state.headingStyle}><strong>Description:</strong></p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sapien tellus, 
@@ -45,8 +41,7 @@ class AboutPage extends React.Component {
                 aliquet ex, eu mollis risus lacus eget justo. </p>
             </Col>
           </Row>
-        </Container>
-        </div>
+        </Container> 
       </div>   
     );
   }

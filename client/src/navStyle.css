@@ -5,17 +5,15 @@
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-
 .topNav {
     background: #06080e;    
-    font-size: 20px;
+    font-size: 16pt;
     color: #fff;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-.topNavLinks {
-    background: #06080e;
-    font-size: 20px;
+.navLink {
+    font-size: 16pt;
     color: #fff;
     height: 80px;
     width: 100%;
@@ -24,35 +22,4 @@
 
 .topNavLinks .nav {
     background: #06080e;    
-}
-
-.topNavLinks a:link {
-    text-decoration: underline;
-  }
-
-.topNavLinks ul {
-    list-style-type: none;
-}
-
-.topNavLinks .nav-link {
-    color: #ffffff;
-    border-radius: .25rem;
-    margin: 0 0.25em;
-}
-
-.topNavLinks .nav-link:hover, .nav-link:focus {
-    color: #e7dabe;
-}
-
-.topNav .nav-link {
-    color: #ffffff;
-}
-
-.topNav .logoImg {
-    float: left;
-;
-}
-
-.topNav .logOutNav {
-    float: right;
 }

@@ -1,30 +1,24 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
-import './style.css';
 import './navStyle.css';
 
-import Navigation from './navigation/navbar';
+import Nav from './navigation/Nav';
 import AboutPage from './about/';
-import PasswordGenerator from './pw-gen/passwordGenerator'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Router>
-        <div className="App">
-          <Navigation />
-          <div className="container">
-            <Route exact path="/pw-gen" component={PasswordGenerator} />
+function App() {
+  return (
+    <div className="App">
+      <Router>
+        <div>
+          <Nav />
+          <div>
             <Route exact path="/about" component={AboutPage} />
           </div>
         </div>
       </Router>
-      </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default App;
