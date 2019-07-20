@@ -38,6 +38,10 @@ body, html {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
+.galleryPic {
+  margin: 5% 20% 5% 20%;
+}
+
 
 @keyframes App-logo-spin {
   from {

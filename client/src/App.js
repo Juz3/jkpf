@@ -4,8 +4,8 @@ import './App.css';
 import './navStyle.css';
 
 import Nav from './navigation/Nav';
-import AboutPage from './about/';
-import Gallery from './gallery/';
+import AboutPage from './about/About';
+import Gallery from './gallery/Gallery';
 
 function App() {
   return (
