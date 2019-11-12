@@ -1,53 +1,54 @@
-body, html {
-  background: #04060a;
+body {
+  font-family: "Lato", Arial, sans-serif;
+  /* height: 100%; */
+  background-color: rgb(12, 15, 19);
+  color: #fff;
+  /* background-image: linear-gradient(rgb(47, 50, 54), rgb(35, 38, 41)); */
+  margin: 0;
 }
 
-.App {
+.container {
   text-align: center;
-  background: #04060a
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navigation */
+.navbar {
+  background-color: rgb(22, 24, 31);
+  background-image: linear-gradient(
+    to bottom,
+    rgb(12, 15, 19),
+    rgb(25, 26, 29)
+  );
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0px;
+  width: 40%;
+  justify-content: space-between;
 }
 
-.aboutPageMain {
-  text-align: center;
-  padding-top: 50px;
-  padding-left: 20%;
-  padding-right:20%;
-  background: #04060a;
-  color: #cab993;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+.navbar li {
+  list-style: none;
 }
 
-.galleryPic {
-  margin: 5% 20% 5% 20%;
+#middleLink {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
+.navbar a,
+a:visited,
+.chLinks {
+  color: #fff;
+  text-decoration: none;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar a:hover {
+  /* font-weight: 600; */
+  color: rgb(185, 233, 255);
 }

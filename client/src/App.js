@@ -1,23 +1,25 @@
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import './App.css';
-import './navStyle.css';
-
-import Nav from './navigation/Nav';
-import AboutPage from './about/About';
-import Gallery from './gallery/Gallery';
+import React, { Fragment } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/layout/Navbar";
+import Gallery from "./components/gallery/Gallery";
+import NotFound from "./components/layout/NotFound";
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
+      <div className="headerBar">
+        <p>Jussi Koivumäki Photography</p>
+      </div>
       <Router>
-        <div>
-          <Nav />
-          <div>
-            <Route exact path="/about" component={AboutPage} />
-            <Route exact path="/gallery" component={Gallery} />
-          </div>
-        </div>
+        <Fragment>
+          <Navbar />
+          <Switch>
+            <Route exact path="/" component={Gallery} />
+
+            <Route component={NotFound} />
+          </Switch>
+        </Fragment>
       </Router>
     </div>
   );
