@@ -11,6 +11,9 @@
 # production
 /build
 
+# Full images
+/src/res/images/jkpf_full_v1
+
 # misc
 .DS_Store
 .env.local
