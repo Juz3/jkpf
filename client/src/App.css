@@ -43,7 +43,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
 }
 
 .closeBtn {
@@ -67,11 +67,26 @@ body {
 }
 
 .prevBtn {
-  margin-right: 30px;
+  margin: auto;
+  vertical-align: middle;
+  height: 100%;
+  width: 100px;
+  /* background-image: url("./res/images/svg/nextBtnVector.svg");
+  background-size: 100px 180px;*/
+  transform: scaleX(-1);
+  border: none;
 }
 
 .nextBtn {
-  margin-left: 30px;
+  margin: auto;
+  vertical-align: middle;
+  height: 100%;
+  width: 100px;
+  border: none;
+}
+
+.svgArrow {
+  height: 100px;
 }
 
 .closeBtn:hover,
@@ -86,7 +101,10 @@ body {
 }
 
 .fullImg {
-  width: 1200px;
+  margin: auto;
+  vertical-align: middle;
+  max-height: 80vh;
+  max-width: 90%;
 }
 
 .pictureWall {

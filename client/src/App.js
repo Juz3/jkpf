@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/layout/Navbar";
 import Gallery from "./components/gallery/Gallery";
+import About from "./components/about/About";
 import NotFound from "./components/layout/NotFound";
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
           <Navbar />
           <Switch>
             <Route exact path="/" component={Gallery} />
-
+            <Route exact path="/about" component={About} />
             <Route component={NotFound} />
           </Switch>
         </Fragment>
