@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./components/layout/Navbar";
 import Gallery from "./components/gallery/Gallery";
 import About from "./components/about/About";
+import Contact from "./components/contact/Contact";
 import NotFound from "./components/layout/NotFound";
 
 function App() {
@@ -18,10 +19,14 @@ function App() {
           <Switch>
             <Route exact path="/" component={Gallery} />
             <Route exact path="/about" component={About} />
+            <Route exact path="/contact" component={Contact} />
             <Route component={NotFound} />
           </Switch>
         </Fragment>
       </Router>
+      <div className="footerBar">
+        <p>© Jussi Koivumäki 2019</p>
+      </div>
     </div>
   );
 }

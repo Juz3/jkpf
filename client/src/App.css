@@ -15,13 +15,35 @@ body {
   display: grid;
   grid-template-columns: 10% 80% 10%;
   grid-template-rows: auto;
-  padding-top: 60px;
 }
 
 .galleryParagraph {
   font-style: italic;
   font-size: 1.2em;
   color: #bbb;
+  padding: 25px 0px 25px 0px;
+}
+
+.aboutPage,
+.contactPage {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: auto;
+  padding-top: 60px;
+}
+
+.aboutChapter,
+.contactChapter {
+  text-align: left;
+  font-size: 0.8em;
+}
+
+h2 {
+  padding-bottom: 40px;
+}
+
+h3 {
+  padding-bottom: 20px;
 }
 
 .pictureModal {
@@ -71,8 +93,6 @@ body {
   vertical-align: middle;
   height: 100%;
   width: 100px;
-  /* background-image: url("./res/images/svg/nextBtnVector.svg");
-  background-size: 100px 180px;*/
   transform: scaleX(-1);
   border: none;
 }
@@ -83,6 +103,12 @@ body {
   height: 100%;
   width: 100px;
   border: none;
+}
+
+.prevBtn:hover,
+.nextBtn:hover,
+.fullImg:hover {
+  cursor: pointer;
 }
 
 .svgArrow {
@@ -129,25 +155,16 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
+.column img:hover {
+  cursor: pointer;
 }
 
-/* Xtra wide */
-@media (min-width: 2000px) {
-  .galleryContainer {
-    grid-template-columns: 20% 60% 20%;
-  }
-}
-
-/* X-Xtra wide */
-@media (min-width: 2600px) {
-  .galleryContainer {
-    grid-template-columns: 25% 50% 25%;
-  }
+.footerBar {
+  margin-top: 120px;
+  padding: 30px 0px 30px 0px;
+  font-size: 0.75em;
+  color: rgb(40, 53, 70);
+  border-top: 1px rgb(40, 53, 70) solid;
 }
 
 /* Navigation */
@@ -190,4 +207,75 @@ a:visited,
 .navbar a:hover {
   /* font-weight: 600; */
   color: rgb(185, 233, 255);
+}
+
+/* Media */
+
+/* Small (Mobile) */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .fullImg {
+    max-width: 100%;
+  }
+
+  .prevBtn,
+  .nextBtn {
+    display: none;
+  }
+
+  .aboutPage,
+  .contactPage {
+    grid-template-columns: 10% 80% 10%;
+  }
+}
+
+/* Size 1 */
+@media (min-width: 800px) {
+  .fullImg {
+    max-width: 70%;
+  }
+
+  .aboutPage,
+  .contactPage {
+    grid-template-columns: 10% 80% 10%;
+  }
+}
+
+/* Size 2 */
+@media (min-width: 1000px) {
+  .fullImg {
+    max-width: 75%;
+  }
+}
+
+/* Size 3 */
+@media (min-width: 1200px) {
+  .fullImg {
+    max-width: 80%;
+  }
+}
+
+/* Size 4 */
+@media (min-width: 1400px) {
+  .fullImg {
+    max-width: 85%;
+  }
+}
+
+/* Xtra wide */
+@media (min-width: 2000px) {
+  .galleryContainer {
+    grid-template-columns: 20% 60% 20%;
+  }
+}
+
+/* X-Xtra wide */
+@media (min-width: 2600px) {
+  .galleryContainer {
+    grid-template-columns: 25% 50% 25%;
+  }
 }
