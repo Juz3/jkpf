@@ -10,12 +10,13 @@ import NotFound from "./components/layout/NotFound";
 function App() {
   return (
     <div className="container">
-      <div className="headerBar">
-        <p>Jussi Koivumäki Photography</p>
-      </div>
       <Router>
         <Fragment>
-          <Navbar />
+          <div className="headerBar">
+            <p>Jussi Koivumäki Photography</p>
+            <Navbar />
+          </div>
+
           <Switch>
             <Route exact path="/" component={Gallery} />
             <Route exact path="/about" component={About} />
