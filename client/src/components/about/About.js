@@ -12,6 +12,7 @@ const About = () => {
             My name is Jussi Koivumäki. I'm a web developer, student and an
             amateur photographer from Tampere, Finland.
           </p>
+          <p>-</p>
         </div>
         <div></div>
       </div>
