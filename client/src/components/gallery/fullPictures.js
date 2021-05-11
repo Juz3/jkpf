@@ -25,7 +25,7 @@ const pictures = [
   ImageV32Full,
   ImageV4Full,
   ImageV5Full,
-  ImageV6Full
+  ImageV6Full,
 ];
 
 export default pictures;

@@ -1,11 +1,14 @@
 import React, { Fragment, useState } from "react";
 import thumbnailPictures from "./thumbnailPictures";
 import fullPictures from "./fullPictures";
+import getFileSize from "./getFileSize";
 import arrowBtn from "../../res/images/svg/nextBtnVector.svg";
+
+// debug prints on or off
+const debug = false;
 
 const Gallery = () => {
   const [picSelect, setPicSelect] = useState(0);
-
   const [modalStyle, setModalStyle] = useState({ display: "none" });
 
   const openModal = (selectedPic) => {
@@ -19,10 +22,20 @@ const Gallery = () => {
   };
 
   const openFullPics = () => {
-    if (picSelect === 0) {
-      return fullPictures[0];
+    if (!debug) {
+      if (picSelect === 0) {
+        return fullPictures[0];
+      } else {
+        return fullPictures[picSelect];
+      }
     } else {
-      return fullPictures[picSelect];
+      if (picSelect === 0) {
+        getFileSize(fullPictures, 0);
+        return fullPictures[0];
+      } else {
+        getFileSize(fullPictures, picSelect);
+        return fullPictures[picSelect];
+      }
     }
   };
 
@@ -31,7 +44,7 @@ const Gallery = () => {
 
     var src = e.target.attributes.src.value;
 
-    console.log(src);
+    if (debug) console.log(src);
 
     changePic(e, true);
   };
@@ -75,6 +88,7 @@ const Gallery = () => {
       ></img>
     ) : null
   );
+
   return (
     <Fragment>
       <div>
