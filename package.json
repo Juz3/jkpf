@@ -3,13 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "concurrently": "^6.1.0",
-    "nodemon": "^1.19.4"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -19,6 +12,14 @@
     "both": "concurrently \"npm run start:watch\" \"npm run client\"",
     "heroku-postbuild": "echo \" Running postbuild script...\" && cd client && npm install && npm run build"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Jussi Koivumäki",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.1.0",
+    "nodemon": "^1.19.4"
+  }
 }

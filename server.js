@@ -11,15 +11,13 @@
 
 const express = require("express");
 const path = require("path");
+const redirect = require("./redirect");
 
-/* // needed for parsing form data from request body
-const bodyParser = require('body-parser');
- */
-
-// Express instance
 const app = express();
 
 app.use(express.json({ extended: false }));
+
+app.use(redirect());
 
 const port = process.env.PORT || 5000;
 
