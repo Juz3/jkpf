@@ -1,8 +1,6 @@
 import React, { Fragment, useState } from "react";
-
 import thumbnailPictures from "./thumbnailPictures";
 import fullPictures from "./fullPictures";
-
 import arrowBtn from "../../res/images/svg/nextBtnVector.svg";
 
 const Gallery = () => {
@@ -106,6 +104,11 @@ const Gallery = () => {
             <img className="svgArrow" src={arrowBtn} alt=""></img>
           </button>
         </div>
+        {/*         <div>
+          <Link to="/full_1">
+            <button>full size</button>
+          </Link>
+        </div> */}
       </div>
       <div className="galleryContainer">
         <div> </div>
