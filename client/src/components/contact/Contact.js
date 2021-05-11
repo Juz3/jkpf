@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="contactChapter">
           <h2>Contact</h2>
           <p> </p>
-          <h3>Contact form coming soon!</h3>
+          <h3>Contact form coming soon!™</h3>
           <p>
             Meanwhile you can contact me at{" "}
             <i style={{ fontStyle: "normal", color: "rgb(0, 155, 255)" }}>

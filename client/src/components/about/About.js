@@ -9,7 +9,7 @@ const About = () => {
           {" "}
           <h2>Author</h2>
           <p>
-            My name is Jussi Koivumäki. I'm a web developer, student and an
+            My name is Jussi Koivumäki. I'm a software developer, student and an
             amateur photographer from Tampere, Finland.
           </p>
           <p>-</p>
