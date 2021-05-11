@@ -5,7 +5,7 @@ const Navbar = () => {
   const publicLinks = (
     <ul>
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/photos">Photos</Link>
       </li>
       <li>
         <Link to="/about">About</Link>

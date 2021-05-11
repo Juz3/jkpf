@@ -6,6 +6,7 @@ import Gallery from "./components/gallery/Gallery";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import NotFound from "./components/layout/NotFound";
+import Redirector from "./components/layout/Redirector";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           </div>
 
           <Switch>
-            <Route exact path="/" component={Gallery} />
+            <Route exact path="/" component={Redirector} />
+            <Route exact path="/photos" component={Gallery} />
             <Route exact path="/about" component={About} />
             <Route exact path="/contact" component={Contact} />
             <Route component={NotFound} />
@@ -26,7 +28,7 @@ function App() {
         </Fragment>
       </Router>
       <div className="footerBar">
-        <p>© Jussi Koivumäki 2019</p>
+        <p>© Jussi Koivumäki 2021</p>
       </div>
     </div>
   );

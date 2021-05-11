@@ -8,7 +8,7 @@ const Gallery = () => {
 
   const [modalStyle, setModalStyle] = useState({ display: "none" });
 
-  const openModal = selectedPic => {
+  const openModal = (selectedPic) => {
     setPicSelect(selectedPic);
 
     if (modalStyle.display === "none") {
@@ -26,7 +26,7 @@ const Gallery = () => {
     }
   };
 
-  const fullPicClick = e => {
+  const fullPicClick = (e) => {
     e.stopPropagation();
 
     var src = e.target.attributes.src.value;
@@ -75,13 +75,8 @@ const Gallery = () => {
       ></img>
     ) : null
   );
-
-  /*   const renderContent =
-    fullPicLink !== null ? <Redirect to={fullPicLink} /> : <div>ASDSAD</div>;
- */
   return (
     <Fragment>
-      {/* {renderContent} */}
       <div>
         {" "}
         <p className="galleryParagraph">Gallery</p>
@@ -91,24 +86,19 @@ const Gallery = () => {
           <button className="closeBtn cursor" onClick={openModal}>
             Close
           </button>
-          <button className="prevBtn" onClick={e => changePic(e, false)}>
+          <button className="prevBtn" onClick={(e) => changePic(e, false)}>
             <img className="svgArrow" src={arrowBtn} alt=""></img>
           </button>
           <img
             className="fullImg"
             src={openFullPics()}
             alt=""
-            onClick={e => fullPicClick(e)}
+            onClick={(e) => fullPicClick(e)}
           ></img>
-          <button className="nextBtn" onClick={e => changePic(e, true)}>
+          <button className="nextBtn" onClick={(e) => changePic(e, true)}>
             <img className="svgArrow" src={arrowBtn} alt=""></img>
           </button>
         </div>
-        {/*         <div>
-          <Link to="/full_1">
-            <button>full size</button>
-          </Link>
-        </div> */}
       </div>
       <div className="galleryContainer">
         <div> </div>
